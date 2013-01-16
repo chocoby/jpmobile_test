@@ -36,3 +36,8 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+gem "devise", "~> 2.2.2"
+gem "jpmobile", "~> 3.0.7"
+gem "haml-rails", "~> 0.3.5"

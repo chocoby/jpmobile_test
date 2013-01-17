@@ -39,6 +39,7 @@ gem 'jquery-rails'
 
 
 gem "devise", "~> 2.2.2"
-gem "jpmobile", "~> 3.0.7"
+#gem "jpmobile", "~> 3.0.7"
+gem "jpmobile", github: 'chocoby/jpmobile', branch: 'feature/support_dalli_session_store'
 gem "haml-rails", "~> 0.3.5"
 gem "dalli", "~> 2.6.0"

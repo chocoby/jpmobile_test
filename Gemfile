@@ -41,3 +41,4 @@ gem 'jquery-rails'
 gem "devise", "~> 2.2.2"
 gem "jpmobile", "~> 3.0.7"
 gem "haml-rails", "~> 0.3.5"
+gem "dalli", "~> 2.6.0"

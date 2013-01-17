@@ -1,0 +1,16 @@
+%h1 セッションのテスト
+
+%p
+  Key: hoge
+
+%p
+  - if session[:hoge].present?
+    Value: #{session[:hoge]}
+  - else
+    Value: セットされていません
+
+%p
+  = link_to '登録', sessions_set_path
+
+%p
+  = link_to '削除', sessions_delete_path

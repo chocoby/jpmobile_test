@@ -34,4 +34,8 @@ JpmobileTest::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Use dalli store for cache store
+  config.cache_store = :dalli_store, 'localhost:11211',
+    { namespace: "jpmobile_test", compress: true }
 end

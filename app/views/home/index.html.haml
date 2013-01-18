@@ -1,3 +1,11 @@
-%h1 PC or Smartphone
+%h1= (request.mobile?) ? 'Mobile' : 'PC or Smartphone'
 
-= link_to 'Session', sessions_path
+- if user_signed_in?
+  %p
+    = current_user.email
+    = link_to 'ログアウト', destroy_user_session_path
+- else
+  %p= link_to '登録', new_user_registration_path
+  %p= link_to 'ログイン', new_user_session_path
+
+%p= link_to 'Session Test', sessions_path
